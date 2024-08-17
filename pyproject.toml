@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "credibility"
+version = "0.1.0"
+description = ""
+authors = ["Martin Sit <46298951+martin226@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.3"
+requests = "^2.32.3"
+openai = "^1.41.0"
+beautifulsoup4 = "^4.12.3"
+selenium = "^4.23.1"
+tranco = "^0.8.1"
+pillow = "^10.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
