@@ -145,14 +145,15 @@ def calculate_credibility_score(domain_age, tranco_rank, gpt_data, metadata):
     elif domain_age >= 5:
         credibility_score += 5
     
-    if tranco_rank <= 1000:
-        credibility_score += 20
-    elif tranco_rank <= 5000:
-        credibility_score += 15
-    elif tranco_rank <= 10000:
-        credibility_score += 10
-    elif tranco_rank <= 50000:
-        credibility_score += 5
+    if tranco_rank >= 1:
+        if tranco_rank <= 1000:
+            credibility_score += 20
+        elif tranco_rank <= 5000:
+            credibility_score += 15
+        elif tranco_rank <= 10000:
+            credibility_score += 10
+        elif tranco_rank <= 50000:
+            credibility_score += 5
     
     if gpt_data["content_credibility"] == 2:
         credibility_score += 30

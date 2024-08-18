@@ -16,6 +16,7 @@ def analyze():
     credibility_score = metrics.calculate_credibility_score(domain_age, tranco_rank, gpt_data, metadata)
     return jsonify(
         domain=domain,
+        screenshot=screenshot,
         domain_age=domain_age,
         tranco_rank=tranco_rank,
         gpt_data=gpt_data,
