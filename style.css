@@ -1,0 +1,239 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+p {
+    font-size: 28px;
+    cursor: default;
+    font-family: 'Radio Canada';
+    font-weight: 500;
+    color: #666666;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+.navbar{
+    height: 8vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: right;
+}
+
+.navbar .container a {
+    display: inline-flex;
+    margin-right: 2vb;
+    margin-top: 3vh;
+}
+
+.navbar .container .menu a {
+    display: flex;
+    align-items: center;
+    height: 15px;
+    padding-top: 1.5dvh;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    align-items: center;
+    color: #196cce;
+    font-family: 'Radio Canada';
+    padding-right: 20px;
+}
+
+.navbar .container .menu a:hover {
+    color: #4f92df;
+    transition: 0.25s;
+}
+
+.navbar .container .logo h1 {
+    position: absolute;
+    height: 15px;
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #196CCE;
+    padding-top: 0.5dvh;
+    position: absolute;
+    left: 2px;
+    color: #196CCE;
+    margin-top: 0.5rem;
+    font-size: 4vh;
+}
+
+.hero {
+    height: 39rem; 
+    display: flex;
+    justify-content: center;
+    padding-top: 12em;
+    height: 92vh;
+    width: 100%;
+    background: #fff;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero .container .hero-content h1 {
+    display: inline;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #2D3748;
+    cursor: default;
+}
+
+.hero .container .hero-content {
+    display: inline;
+}
+
+.hero .container .hero-content .credibility {
+    padding-left: 0.5rem;
+    color: #196CCE;
+}
+
+.hero .container .url {
+    display: inline-flex;
+    gap: 1em;
+}
+
+.hero .container .url input {
+    width: 40em;
+    height: 3em;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 2%;
+    border: solid #bbb 2px;
+    font-family: 'Poppins';
+    color: #555;
+}
+
+.hero .container .url input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #ccc;
+}
+
+.hero .container .url button {
+    width: 7em;
+    height: 3em;
+    text-align: center;
+    margin-top: 0em;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #196CCE;
+    color: white;
+    border: none; 
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.hero .container .url button:hover {
+    background-color: #2e80de;
+    transition: 0.25s;
+}
+
+.text {
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.text h3 {
+    font-family: 'Radio Canada';
+    font-size: 22px;
+}
+
+.text h3:last-child {
+    color: #2e80de;
+}
+
+.result {
+    background-color: #eee;
+}
+
+.analysis {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+.analysis div {
+    padding: 20px;
+}
+
+.block1 {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column: 1;
+    width: 40vw;
+    height: 65vh;
+}
+
+.block2 {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 40vw;
+}
+
+.block3 {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.block {
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 3px 4px 4px rgba(3, 6, 32, 0.174);
+    border: none;
+}
+
+.block h4{
+    font-size: 30px;
+    font-family: 'Radio Canada';
+    color: #333;
+}
+
+.block1 h4 {
+    text-align: center;
+    margin-top: 15px;
+    padding: none;
+}
+
+.block2 h4, .block3 h4 {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: none;
+}
+
+
