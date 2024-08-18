@@ -3,20 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "frontend:dev": "next dev",
+    "frontend:build": "next build",
+    "frontend:start": "next start",
+    "frontend:lint": "next lint",
+    "backend:dev": "poetry run flask --app api/app --debug run --port=8080",
+    "dev": "concurrently --kill-others-on-fail \"npm run frontend:dev\" \"npm run backend:dev\""
   },
   "dependencies": {
+    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "concurrently": "^8.2.2",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }

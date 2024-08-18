@@ -9,13 +9,9 @@ from bs4 import BeautifulSoup
 from openai import OpenAI
 from urllib.parse import urlparse
 import json
-from dotenv import load_dotenv
 import os
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "../.env"))
-
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
 
 t = Tranco(cache=True, cache_dir=".tranco")
 chrome_options = Options()
@@ -34,7 +30,7 @@ chrome_options.add_experimental_option('useAutomationExtension', False)
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
 chrome_options.add_argument(f"user-agent={user_agent}")
 
-service = Service("./chromedriver")
+service = Service(os.path.join(os.path.dirname(__file__), "chromedriver"))
 
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
