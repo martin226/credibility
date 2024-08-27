@@ -1,4 +1,20 @@
-# Credibility
+<div align="center">
+    <img alt="Logo" src="docs/logo.png" width="100" />
+</div>
+<h1 align="center">
+    Credibility
+</h1>
+<p align="center">
+    The AI research assistant that helps you verify sources with confidence.
+</p>
+
+> _tldr;_ Credibility helps you research with confidence by using LLMs and key metrics to assess the credibility of websites.
+
+[Demo Video](https://www.youtube.com/watch?v=jdYm-1YStLk) | [Devpost](https://devpost.com/software/credibility)
+
+[![Credibility YouTube Video](docs/youtube.png)](https://www.youtube.com/watch?v=jdYm-1YStLk)
+
+## Get Started
 
 ```bash
 npm install
